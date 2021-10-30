@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Welcome page for Online Classes">
     <meta name= "author" content="Steve">
-    <meta name="keywords" content="Online, Classes">
+    <meta name="keywords" content="Online, Classes, SkillDev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page </title>
 </head>
 <body>
     <header>  
         <!--Welcome header-->
+        <h1>Welcome to SkillDev!!! </h1>
+        <div class="NavBar">
+            <nav id="welcomeNav">
+                <ul>
+                    <li>         </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <main>
     <!-- Some adds for the main body, perhaps a sing in-->
-
-
+    <h3> What are you searching for today? </h3>
+        <!-- a search for here -->
+    </main>
     <footer> 
         <!-- link to page "about us", contact info  -->
 
