@@ -10,50 +10,46 @@
     <title>SkillDev | Welcome Page</title>
 </head>
 <body>
-    <header>  
-        <!--Welcome header-->
-        <h1>Welcome to SkillDev!!!</h1>
-        <div class="NavBar">
-            <nav id="welcomeNav">
+
+    <!-- Header bar -->
+    <header class="container">  
+        <!-- Navigation bar -->
+        <nav id="navbar">
+            <!-- Webpage icon -->
+            <div id="page-icon">
+                <img src="" alt="webpage icon">
+            </div>
+            <!-- Webpage name -->
+            <div id="page-name">
+                <h1>SkillDev</h1>
+            </div>
+            <!-- Webpage menu -->
+            <div id="page-menu">
                 <ul>
-                    <li>         </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
     <!-- Some adds for the main body, perhaps a sing in-->
-    <h3> What are you searching for today? </h3>
-        <!-- a search for here
-        
+    <main class="container">
+        <!-- Search bar -->
          <section id="search">
+            <div class="section-title">
+                <h2> What do you want to learn ?</h2>
+            </div>
             <form action="/search"  method="post">
                 <input class="search-box" type="text" name="query" placeholder="Search...">
-                <button class="search-btn" type="submit" > Search </button>
+                <button class="search-btn" type="submit" >Search</button>
             </form>
         </section>
-        <section id="results">
-            <div class="result">
-                <div class="id">
-                    <p><b>ID:</b> </p>
-                </div>
-                <div class="title">
-                    <p><b>Title:</b></p>
-                </div>
-                <div class="abstract">
-                    <p ></p>
-                </div>
-                <div class="score">
-                    <p><b>Score:</b></p>
-                </div>
-            </div>
-        </section>
-        
-        
-        -->
     </main>
-    <footer> 
+
+    <!-- Footer bar -->
+    <footer class="container"> 
         <!-- link to page "about us", contact info  -->
 
     </footer>
