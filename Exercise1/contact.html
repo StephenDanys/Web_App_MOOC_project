@@ -37,7 +37,54 @@
 
     <!-- Some adds for the main body, perhaps a sing in-->
     <main class="container">
-       
+        <h1 id="Contact_h"> Contact us</h1>
+        <div class="contactForm">
+       <!--form, action to be filled-->
+        <form action="/proccess_form" method="post">
+            <fieldset>
+                <legend> Στοιχεία Επικοινονίας</legend>
+
+                <label for="Fname"> First Name: </label>
+                <input type="text" id="Fname" name="FirstName">
+
+                <label for="Lname"> Last Name: </label>
+                <input type="text" id="Lname" name="LastName" required >
+
+                <label for="txt_email"> Email: </label>
+                <input type="text" id="txt_email" name="email" required >
+                
+                <!-- selector for country number like +30-->
+                <label for="sel_country_phoneCode">County phone code</label>
+                <select id="sel_country_phoneCode" name="County Code" required>
+                    <option value="" selected>--Please choose an option--</option>
+                    <option value="+30"> +30 Greece </option>
+                    <option value="+1"> +1 USA</option>
+                </select>
+
+                <label for="In_phone"> Phone : </label>
+                <input type="tel" id="In_phone" name="Input phone" placeholder="123-4567890" size="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <fieldset>
+                    <legend>Was there something wrong?</legend>
+                    <input type="radio" id="GoodReview" name="reviewType" value="no">
+                    <label for="GoodReview">No</label>
+
+                    <input type="radio" id="BadReview" name="reviewType" value="yes">
+                    <label for="BadReview">Yes</label>
+                </fieldset>
+
+                <label for="Review_txt">Review</label>
+                <textarea id="Review_txt" name="Review" placeholder="Write something.." ></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        </div>
     </main>
 
     <!-- Footer bar -->
