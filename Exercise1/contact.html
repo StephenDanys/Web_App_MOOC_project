@@ -34,67 +34,81 @@
         </nav>
     </header> 
 
-    <!-- Some adds for the main body, perhaps a sing in-->
     <main class="container">
-        <h1 id="Contact_h"> Contact us</h1>
-        <div class="contactForm">
-       <!--form, action to be filled-->
-        <form action="/proccess_form" method="post">
-            <fieldset>
-                <legend> Στοιχεία Επικοινονίας</legend>
+        <!-- Page banner -->
+        <section class="about">
+            <div class="section-title">
+                <h1> Contact us</h1>
+            </div>
+            <div class="section-info">
+                <p>
+                    Have questions? The quickest way to get in touch with us is using the contact information below.
+                </p>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <!-- Contact form -->
+            <form class="contact-form" action="/process_form" method="post">
+                <!-- User information -->
+                <fieldset class="user-info">
+                    <legend>Contact Information</legend>
 
-                <label for="Fname"> First Name: </label>
-                <input type="text" id="Fname" name="FirstName">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first-name-form" required>
 
-                <label for="Lname"> Last Name: </label>
-                <input type="text" id="Lname" name="LastName" required >
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last-name-form" required >
 
-                <label for="txt_email"> Email: </label>
-                <input type="text" id="txt_email" name="email" required >
-                
-                <!-- selector for country number like +30-->
-                <label for="sel_country_phoneCode">County phone code</label>
-                <select id="sel_country_phoneCode" name="County Code" required>
-                    <option value="" selected>--Please choose an option--</option>
-                    <option value="+30"> +30 Greece </option>
-                    <option value="+1"> +1 USA</option>
-                    <option value="+92"> +92 Pakistan</option>
-                    <option value="+666">+666 Mars</option>
-                </select>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email-form" required >
+                    
+                    <!-- selector for country phone code -->
+                    <label for="sel-country-phone-code">County phone code</label>
+                    <select id="sel-country-phone-code" name="phone-code" required>
+                        <option value="" selected>--Please choose an option--</option>
+                        <option value="+30">+30 Greece</option>
+                        <option value="+1">+1 USA</option>
+                        <option value="+92">+92 Pakistan</option>
+                    </select>
 
-                <label for="In_phone"> Phone : </label>
-                <input type="tel" id="In_phone" name="Input phone" placeholder="123-4567890" size="10">
-            </fieldset>
-
-            <fieldset>
-                <legend>Feedback</legend>
-
-                <fieldset>
-                    <legend>Rate Us!</legend>
-                    <input type="radio" id="onestar" name="rating" value="1">
-                    <label for="onestar">&#9733;</label>
-
-                    <input type="radio" id="twostars" name="rating" value="2">
-                    <label for="twostars">&#9733;&#9733;</label>
-
-                    <input type="radio" id="threestars" name="rating" value="3">
-                    <label for="threestars">&#9733;&#9733;&#9733;</label>
-
-                    <input type="radio" id="fourstars" name="rating" value="4">
-                    <label for="fourstars">&#9733;&#9733;&#9733;&#9733;</label>
-
-                    <input type="radio" id="fivestars" name="rating" value="5">
-                    <label for="onestar">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                    <label for="tel"> Phone : </label>
+                    <input type="tel" id="tel" name="telephone-form" placeholder="123-456-7890" size="12">
                 </fieldset>
 
-                <label for="Review_txt">Review</label>
-                <textarea id="Review_txt" name="Review" placeholder="Write something..." ></textarea>
-            </fieldset>
+                <fieldset class="user-feedback">
+                    <legend>Feedback</legend>
 
-            <input type="submit" value="Submit">
+                    <!-- User rating -->
+                    <fieldset class="user-rating">
+                        <legend>Rate Us</legend>
+                        <input type="radio" id="onestar" name="rating" value="1">
+                        <label for="onestar">&#9733;</label>
 
-        </form>
-        </div>
+                        <input type="radio" id="twostars" name="rating" value="2">
+                        <label for="twostars">&#9733;&#9733;</label>
+
+                        <input type="radio" id="threestars" name="rating" value="3">
+                        <label for="threestars">&#9733;&#9733;&#9733;</label>
+
+                        <input type="radio" id="fourstars" name="rating" value="4">
+                        <label for="fourstars">&#9733;&#9733;&#9733;&#9733;</label>
+
+                        <input type="radio" id="fivestars" name="rating" value="5">
+                        <label for="onestar">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                    </fieldset>
+
+                    <fieldset class="user-comment">
+                        <legend>Review Us</legend>
+                        <textarea id="review" name="review" placeholder="Write something..." ></textarea>
+                    </fieldset>
+                </fieldset>
+                
+                <div class="user-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
     </main>
 
     <!-- Footer bar -->
