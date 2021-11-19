@@ -1,0 +1,57 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --antarctic-blue: #2c3d63
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--black);
+    /* background: var(--white); */
+    /* font-family: 'Ubuntu', sans-serif; */
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: var(--antarctic-blue);
+    color: var(--white);
+    /* position: fixed; */
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.page-menu {
+    width: 20%;
+}
+
+.page-menu ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.page-menu li {
+    list-style: none;
+}
+
+.page-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
