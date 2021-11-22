@@ -1,0 +1,36 @@
+/* Footer general*/
+:root {
+    --white: #fff;
+    --black: #000;
+    --blue-birds: #0096d1;
+    --bright-yellow: #fbdb14;
+}
+
+footer{
+    background-color: var(--bright-yellow);
+    color:black;
+    text-decoration:underline;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+
+
+#mobile{
+    text-align: left;
+}
+
+#github{
+    text-align: left;
+}
+
+#email{
+    text-align:right;
+}
+
+#instagram{
+    text-align: right;
+}
