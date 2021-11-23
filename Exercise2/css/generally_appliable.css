@@ -6,7 +6,23 @@
     --bright-yellow: #fbdb14;
 }
 
-footer{
+.sidebar-box {
+    background-color: #0096d1   ;
+}
+.sidebar{
+    margin-left: 50px;
+    margin-right: 20px;
+    /*background-color: #fbdb14;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+
+}
+.sidebar li{
+    font-size: larger;
+    text-align: left;
+}
+/*footer{
     background-color: var(--bright-yellow);
     color:black;
     text-decoration:underline;
@@ -16,10 +32,14 @@ footer{
     justify-content: space-around;
     width: 100%;
     height: fit-content;
-}
+    
+}*/
+/*.social li {
+    color:red;
+}*/
 
+/*#mobile{
 
-#mobile{
     text-align: left;
 }
 
@@ -33,4 +53,10 @@ footer{
 
 #instagram{
     text-align: right;
-}
+}*/
+
+/*cource boxes*/
+
+
+
+/*forms*/
