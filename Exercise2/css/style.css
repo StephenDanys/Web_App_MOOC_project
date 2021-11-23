@@ -17,16 +17,27 @@ body {
     color: var(--black);
     background-color: ghostwhite;
     font-family: Arial, Helvetica, sans-serif;
-    /* background: var(--white); */
-    /* font-family: 'Ubuntu', sans-serif; */
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
     width: 100%;
     height: fit-content;
 }
-/* na kanoyme to # koympi, kai na baloyme dipla logo san background img*/   
+
+a:link { /* unvisited link*/
+    color:blue;
+}
+
+a:visited { /* visited link*/
+    color:red;
+}
+
+a:active { /* current link*/
+    color: purple;
+}
+
 /* Navigation Bar */
 .navbar {
     background: var(--blue-birds);
@@ -48,7 +59,6 @@ body {
 .page-menu ul {
     display: flex;
     justify-content: space-around;
-    
 }
 
 .page-menu li {
@@ -61,26 +71,11 @@ body {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-a:link { /* unvisited link*/
-    color:blue;
-}
-a:visited { /* visited link*/
-    color:red;
-}
-a:active { /* current link*/
-    color: purple;
-}
-    
-=======
 /* Footer */
 footer {
     padding: 10px;
     background-color: var(--white-lie);
     color: var(--black);
-    /* text-decoration:underline;
-    top: 0;
-    z-index: 1; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,7 +84,7 @@ footer {
 }
 
 .social {
-    width: 80%;
+    width: 100%;
 }
 
 .social ul {
@@ -103,8 +98,37 @@ footer {
 }
 
 .social a {
-    color: var(--blue-birds);
     text-decoration: none;
     font-weight: bold;
 }
->>>>>>> c947efd451c1be1939240aab1584baf98282a2a7
+
+/* 2-side banners */
+.banner {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.banner-right {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-right img {
+    margin: 10%;
+    width: 60%;
+    border-radius: 50%;
+}
