@@ -3,6 +3,8 @@
     --black: #000;
     --antarctic-blue: #2c3d63;
     --blue-birds: #0096d1;
+    --bright-yellow: #fbdb14;
+    --white-lie: #dededc
 }
 
 /* General */
@@ -59,6 +61,7 @@ body {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 a:link { /* unvisited link*/
     color:blue;
 }
@@ -69,3 +72,39 @@ a:active { /* current link*/
     color: purple;
 }
     
+=======
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: var(--white-lie);
+    color: var(--black);
+    /* text-decoration:underline;
+    top: 0;
+    z-index: 1; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.social {
+    width: 80%;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.social li {
+    list-style: none;
+}
+
+.social a {
+    color: var(--blue-birds);
+    text-decoration: none;
+    font-weight: bold;
+}
+>>>>>>> c947efd451c1be1939240aab1584baf98282a2a7
