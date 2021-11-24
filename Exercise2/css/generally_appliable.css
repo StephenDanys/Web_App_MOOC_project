@@ -7,52 +7,60 @@
 }
 
 .sidebar-box {
-    background-color: #0096d1   ;
+
 }
 .sidebar{
+    
     margin-left: 50px;
     margin-right: 20px;
     /*background-color: #fbdb14;*/
-    padding-left: 20px;
-    padding-right: 20px;
-    float: right;
 
 }
 .sidebar li{
     font-size: larger;
     text-align: left;
 }
-/*footer{
-    background-color: var(--bright-yellow);
-    color:black;
-    text-decoration:underline;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: fit-content;
+
+.course-list{
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+}
+
+.course{ /*creating box*/
+    margin-bottom: 50px;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border: 1px solid black;
+    border-width: 3px;
+}
+
+.course-top{    /*gridding+alligns*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.course-left{ /*text of the course sizing and general rules*/
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column-start: 1;
     
-}*/
-/*.social li {
-    color:red;
-}*/
-
-/*#mobile{
-    text-align: left;
 }
-#github{
-    text-align: left;
+
+.course-right img {
+width:400px;
+height:400px;
+
 }
-#email{
-    text-align:right;
+.cost{
+    font-weight: bold;
+    text-align: center;
 }
-#instagram{
-    text-align: right;
-}*/
 
-/*cource boxes*/
+.course_bottom ul{
 
-
-
-/*forms*/
+}
