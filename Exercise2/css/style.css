@@ -3,8 +3,8 @@
     --black: #000;
     --antarctic-blue: #2c3d63;
     --blue-birds: #0096d1;
-    --bright-yellow: #fbdb14;
-    --white-lie: #dededc
+    --white-lie: #dededc;
+    --white-smoke: #f4f4f4;
 }
 
 /* General */
@@ -15,7 +15,7 @@
 
 body {
     color: var(--black);
-    background-color: ghostwhite;
+    background-color: var(--white-smoke);
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     overflow-x: hidden;
@@ -24,6 +24,9 @@ body {
 .container {
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a:link { /* unvisited link*/
@@ -42,7 +45,6 @@ a:active { /* current link*/
 .navbar {
     background: var(--blue-birds);
     color: var(--white);
-    /* position: fixed; */
     top: 0;
     z-index: 1;
     display: flex;
@@ -68,7 +70,11 @@ a:active { /* current link*/
 .page-menu a {
     color: var(--white);
     text-decoration: none;
+}
+
+a.active {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -102,33 +108,100 @@ footer {
     font-weight: bold;
 }
 
-/* 2-side banners */
+/* 2-Side Banners */
 .banner {
-    padding: 2%;
+    margin: 2% 0;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    width: 100%;
+    width: 90%;
+    background: var(--white);
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.banner:hover{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.5);
 }
 
 .banner-left {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
 }
 
 .banner-right {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
 }
 
-.banner-right img {
+/* Promotion Banner */
+.promo-banner > .banner-left > h2 {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+.promo-banner > .banner-left > p {
+    margin-bottom: 10%;
+    font-size: 0.9rem;
+}
+
+.promo-banner > .banner-left > a {
+    padding: 2%;
+    min-width: 30%;
+    min-height: 50%;
+    font-size: 15px;
+    background: var(--blue-birds);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.promo-banner > .banner-left > a:hover {
+    background: var(--antarctic-blue);
+}
+
+.promo-banner > .banner-right > img {
     margin: 10%;
     width: 60%;
     border-radius: 50%;
+}
+
+/* Information Banner */
+.info-banner > .banner-left > h2 {
+    /* margin-bottom: 2%; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info-banner > .banner-left {
+    align-items:unset;
+    margin-left: 4%;
+}
+
+.info-banner > .banner-left > dl {
+    margin-top: 2%;
+}
+
+.info-banner > .banner-left > dl > dt {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info-banner > .banner-left > dl > dd {
+    margin-bottom: 2%;
+}
+
+.info-banner > .banner-left > p {
+    font-size: 1rem;
+}
+
+.info-banner > .banner-right > img {
+    margin: 10% 0;
+    width: 60%;
 }
