@@ -139,17 +139,17 @@ footer {
 }
 
 /* Promotion Banner */
-.promo-banner > .banner-left > h2 {
+.promo-banner .banner-left h2 {
     margin-bottom: 2%;
     font-size: 1.5rem;
 }
 
-.promo-banner > .banner-left > p {
+.promo-banner .banner-left p {
     margin-bottom: 10%;
     font-size: 0.9rem;
 }
 
-.promo-banner > .banner-left > a {
+.promo-banner .banner-left a {
     padding: 2%;
     min-width: 30%;
     min-height: 50%;
@@ -162,7 +162,7 @@ footer {
     transition: 0.3s;
 }
 
-.promo-banner > .banner-left > a:hover {
+.promo-banner .banner-left a:hover {
     background: var(--antarctic-blue);
 }
 
@@ -173,35 +173,35 @@ footer {
 }
 
 /* Information Banner */
-.info-banner > .banner-left > h2 {
+.info-banner .banner-left h2 {
     /* margin-bottom: 2%; */
     font-size: 2rem;
     font-weight: bold;
 }
 
-.info-banner > .banner-left {
+.info-banner .banner-left {
     align-items:unset;
     margin-left: 4%;
 }
 
-.info-banner > .banner-left > dl {
+.info-banner .banner-left dl {
     margin-top: 2%;
 }
 
-.info-banner > .banner-left > dl > dt {
+.info-banner .banner-left dt {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.info-banner > .banner-left > dl > dd {
+.info-banner .banner-left dd {
     margin-bottom: 2%;
 }
 
-.info-banner > .banner-left > p {
+.info-banner .banner-left p {
     font-size: 1rem;
 }
 
-.info-banner > .banner-right > img {
+.info-banner .banner-right img {
     margin: 10% 0;
     width: 60%;
 }
@@ -265,4 +265,48 @@ footer {
 button:hover{
     background: var(--white);
     color: var(--antarctic-blue);
+}
+
+/* Page Banner */
+.about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .section-title, .about .section-info {
+    width: 80%;
+    text-align: center;
+}
+
+.about .section-title h2 {
+    margin-bottom: 2%;
+}
+
+.about-topics {
+    background: url(../img/topics-banner.jpg) no-repeat center center/cover;
+    color: var(--white);
+}
+
+/* Topic Banners */ 
+.banner-topic .banner-right img {
+    margin: 10%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+.banner-topic .banner-left h2, .banner-topic .banner-left ul {
+    width: 60%;
+}
+
+.banner-topic .banner-left h2 {
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+
+.banner-topic .banner-left li {
+    list-style: none;
 }
