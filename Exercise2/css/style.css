@@ -54,6 +54,11 @@ a:active { /* current link*/
     height: fit-content;
 }
 
+.page-icon img{
+    width: 20%;
+    height: auto;
+}
+
 .page-menu {
     width: 20%;
 }
