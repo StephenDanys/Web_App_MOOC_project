@@ -53,7 +53,10 @@ a:active { /* current link*/
     width: 100%;
     height: fit-content;
 }
-
+.page-icon{
+    width: 40%;
+    
+}
 .page-icon img{
     width: 20%;
     height: auto;

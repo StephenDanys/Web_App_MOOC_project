@@ -8,9 +8,11 @@
     <meta name="author" content="Georgios-Stefanos Meidanis (3170107), Lampros Lountzis (3170095)">
     <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <title>Machine Learning | SkillDev</title>
 </head>
 <body>
+    <div class="wrapper">
    <!-- Header bar -->
    <header class="container">  
         <!-- Navigation bar -->
@@ -35,7 +37,7 @@
         </nav>
     </header> 
 
-    <main class="container">
+    <main class="course-container">
         <!-- Page banner -->
         <section class="about">
             <div class="section-title">
@@ -54,8 +56,9 @@
             </div>
         </section>
 
-        <div class="topic-courses">
+       
             <!-- Sidebar -->
+            <div class="sidebar-box">
             <aside class="sidebar">
                 <nav>
                     <h2>Courses</h2>
@@ -67,15 +70,17 @@
                         <li><a href="#ml-course-5">Sequence Models</a></li>
                     </ul>
                 </nav>
-            </aside>
+                </aside>
+            </div>
 
             <!-- Course info -->
-            <section class="course-list">
+            <article class="course-list">
                 <!-- Course -- Neural Networks and Deep Learning -->
                 <section class="course" id="ml-course-1">
                     <div class="course-top">
                         <h2>Neural Networks and Deep Learning</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will study the foundational concept of neural networks and deep learning. 
@@ -87,6 +92,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-ml-course-1.jpg" alt="neural networks and deep learning banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -104,6 +110,7 @@
                     <div class="course-top">
                         <h2>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will open the deep learning black box to understand the processes 
@@ -120,6 +127,7 @@
                     <div class="course-right">
                         <img src="img/banner-ml-course-2.jpg" alt="improving deep neural networks banner">
                     </div>
+                    </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
                         <ol>
@@ -135,6 +143,7 @@
                     <div class="course-top">
                         <h2>Structuring Machine Learning Projects</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will learn how to build a successful machine learning project and 
@@ -148,6 +157,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-ml-course-3.jpg" alt="structuring machine learning projects banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -163,6 +173,7 @@
                     <div class="course-top">
                         <h2>Convolutional Neural Networks</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will understand how computer vision has evolved and become 
@@ -177,6 +188,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-ml-course-4.jpg" alt="convolutional neural networks banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -194,6 +206,7 @@
                     <div class="course-top">
                         <h2>Sequence Models</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will become familiar with sequence models and their exciting applications 
@@ -209,6 +222,7 @@
                     <div class="course-right">
                         <img src="img/banner-ml-course-5.jpg" alt="sequence models banner">
                     </div>
+                    </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
                         <ol>
@@ -219,8 +233,8 @@
                         </ol>
                     </div>
                 </section>
-            </section>
-        </div>
+            </article>
+        
     </main>
 
     <!-- Footer bar -->
@@ -234,5 +248,6 @@
             </ul>
         </div>
     </footer>
+    </div>
 </body>
 </html>  

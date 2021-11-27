@@ -8,10 +8,12 @@
     <meta name="author" content="Georgios-Stefanos Meidanis (3170107), Lampros Lountzis (3170095)">
     <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <title>Web Devlopemnt | SkillDev</title>
 </head>
 <body>
    <!-- Header bar -->
+   <div class="wrapper">
    <header class="container">  
         <!-- Navigation bar -->
         <nav class="navbar">
@@ -35,7 +37,7 @@
         </nav>
     </header> 
 
-    <main class="container">
+    <main class="course-container">
         <!-- Page banner -->
         <section class="about">
             <div class="section-title">
@@ -51,8 +53,9 @@
             </div>
         </section>
 
-        <div class="topic-courses">
+        
             <!-- Sidebar -->
+            <div class="sidebar-box"> 
             <aside class="sidebar">
                 <nav>
                     <h2>Courses</h2>
@@ -65,14 +68,16 @@
                     </ul>
                 </nav>
             </aside>
+            </div>
 
             <!-- Course info -->
-            <section class="course-list">
+            <article class="course-list">
                 <!-- Course -- Introduction to HTML -->
                 <section class="course" id="wb-course-1">
                     <div class="course-top">
                         <h2>Introduction to HTML</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will study the basic terms you need to know before starting to build your Website,
@@ -83,6 +88,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-wb-course-1.png" alt="intorduction to html banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -100,6 +106,7 @@
                     <div class="course-top">
                         <h2>Cascading Style Sheets</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             The web today is almost unrecognizable from the early days of white pages with lists of blue links.
@@ -112,6 +119,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-wb-course-2.png" alt="cascading style sheets banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -130,6 +138,7 @@
                     <div class="course-top">
                         <h2>Website Functionality- JS</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             In this course, you will learn how to add Functionality to your Website, with Javascript. Icldues Introduction
@@ -140,6 +149,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-wb-course-3.png" alt="website functionality - js banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -158,6 +168,7 @@
                     <div class="course-top">
                         <h2>Full-Stack Developement</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, MongoDB, 
@@ -168,6 +179,7 @@
                     </div>
                     <div class="course-right">
                         <img src="img/banner-wb-course-4.jpeg" alt="full stack development banner">
+                    </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -192,6 +204,7 @@
                     <div class="course-top">
                         <h2>Introduction to APIs</h2>
                     </div>
+                    <div class="course-middle">
                     <div class="course-left">
                         <p>
                             Develop APIs with the Apigee API Platform. Learn how to design, build, secure, deploy, 
@@ -203,6 +216,7 @@
                     <div class="course-right">
                         <img src="img/banner-wb-course-5.jpeg" alt="api banner">
                     </div>
+                    </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
                         <ol>
@@ -212,8 +226,7 @@
                         </ol>
                     </div>
                 </section>
-            </section>
-        </div>
+            </article>
     </main>
 
     <!-- Footer bar -->
@@ -227,5 +240,6 @@
             </ul>
         </div>
     </footer>
+   </div>
 </body>
 </html>  

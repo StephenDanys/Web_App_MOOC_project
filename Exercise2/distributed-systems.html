@@ -8,10 +8,11 @@
     <meta name="author" content="Georgios-Stefanos Meidanis (3170107), Lampros Lountzis (3170095)">
     <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/generally_appliable.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <title>Distributed Systems| SkillDev</title>
 </head>
 <body>
+    <div class= "wrapper">
    <!-- Header bar -->
    <header class="container">  
         <!-- Navigation bar -->
@@ -36,8 +37,9 @@
         </nav>
     </header> 
 
-    <main class="container">
+    <main class="course-container">
         <!-- Page banner -->
+        
         <section class="about">
             <div class="section-title">
                 <h2>About this Course</h2>
@@ -51,9 +53,9 @@
             </div>
         </section>
 
-        <div class="topic-courses">
+        
             <!-- Sidebar -->
-            <div class= "sidebar-box">
+            <div class="sidebar-box">
                 <aside class="sidebar">
                     <nav>
                         <h2>Courses</h2>
@@ -69,26 +71,29 @@
             </div>
             
             <!-- Course info -->
-            <section class="course-list">
+            
+            <article class="course-list">
                 <!-- Course -- Parallel Programming in Java -->
                 <section class="course" id="ds-course-1">
                     <div class="course-top">
                         <h2>Parallel Programming in Java</h2>
                     </div>
-                    <div class="course-left">
-                        <p>
-                            This course teaches learners (industry professionals and students) the fundamental concepts 
-                            of parallel programming in the context of Java 8. Parallel programming enables developers to 
-                            use multicore computers to make their applications run faster by using multiple processors at 
-                            the same time. By the end of this course, you will learn how to use popular parallel Java frameworks 
-                            (such as ForkJoin, Stream, and Phaser) to write parallel programs for a wide range of multicore platforms 
-                            including servers, desktops, or mobile devices.
-                        </p>
-                        <a href="https://www.coursera.org/learn/parallel-programming-in-java?specialization=pcdp">Coursera</a>
-                        <p class= "cost">Cost: $35</p>
-                    </div>
-                    <div class="course-right">
-                        <img src="img/banner-parallel-programming.jpg" alt="paralllel programming in java banner">
+                    <div class="course-middle">
+                        <div class="course-left">
+                            <p>
+                                This course teaches learners (industry professionals and students) the fundamental concepts 
+                                of parallel programming in the context of Java 8. Parallel programming enables developers to 
+                                use multicore computers to make their applications run faster by using multiple processors at 
+                                the same time. By the end of this course, you will learn how to use popular parallel Java frameworks 
+                                (such as ForkJoin, Stream, and Phaser) to write parallel programs for a wide range of multicore platforms 
+                                including servers, desktops, or mobile devices.
+                            </p>
+                            <a href="https://www.coursera.org/learn/parallel-programming-in-java?specialization=pcdp">Coursera</a>
+                            <p class= "cost">Cost: $35</p>
+                        </div>
+                        <div class="course-right">
+                            <img src="img/banner-parallel-programming.jpg" alt="paralllel programming in java banner">
+                        </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -99,6 +104,7 @@
                             <li>Data flow Synchronization and Pipelining</li>
                         </ol>
                     </div>
+                    
                 </section>
 
                 <!-- Course -- Concurrent Programming in Java -->
@@ -106,21 +112,24 @@
                     <div class="course-top">
                         <h2>Concurrent Programming in Java</h2>
                     </div>
-                    <div class="course-left">
-                        <p>
-                            This course teaches learners (industry professionals and students) the fundamental concepts of 
-                            concurrent programming in the context of Java 8. Concurrent programming enables developers to
-                            efficiently and correctly mediate the use of shared resources in parallel programs.
-                            By the end of this course, you will learn how to use basic concurrency constructs in Java such as 
-                            threads, locks, critical sections, atomic variables, isolation, actors, optimistic concurrency and 
-                            concurrent collections, as well as their theoretical foundations (e.g., progress guarantees, deadlock, 
-                            livelock, starvation, linearizability).
-                        </p>
-                        <a href="https://www.coursera.org/learn/concurrent-programming-in-java?specialization=pcdp">Coursera</a>
-                        <p class= "cost">Cost: $20</p>
-                    </div>
-                    <div class="course-right">
-                        <img src="img/banner-concurrent-programming.png" alt="concurrent programming in java banner">
+                    <div class="course-middle">
+                        <div class="course-left">
+
+                            <p>
+                                This course teaches learners (industry professionals and students) the fundamental concepts of 
+                                concurrent programming in the context of Java 8. Concurrent programming enables developers to
+                                efficiently and correctly mediate the use of shared resources in parallel programs.
+                                By the end of this course, you will learn how to use basic concurrency constructs in Java such as 
+                                threads, locks, critical sections, atomic variables, isolation, actors, optimistic concurrency and 
+                                concurrent collections, as well as their theoretical foundations (e.g., progress guarantees, deadlock, 
+                                livelock, starvation, linearizability).
+                            </p>
+                            <a href="https://www.coursera.org/learn/concurrent-programming-in-java?specialization=pcdp">Coursera</a>
+                            <p class= "cost">Cost: $20</p>
+                        </div>
+                        <div class="course-right">
+                            <img src="img/banner-concurrent-programming.png" alt="concurrent programming in java banner">
+                        </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -138,20 +147,23 @@
                     <div class="course-top">
                         <h2>Distributed Programming in Java</h2>
                     </div>
-                    <div class="course-left">
-                        <p>
-                            This course teaches learners (industry professionals and students) the fundamental concepts of 
-                            Distributed Programming in the context of Java 8. Distributed programming enables developers to 
-                            use multiple nodes in a data center to increase throughput and/or reduce latency of selected applications. 
-                            By the end of this course, you will learn how to use popular distributed programming frameworks for Java programs, 
-                            including Hadoop, Spark, Sockets, Remote Method Invocation (RMI), Multicast Sockets, Kafka, 
-                            Message Passing Interface (MPI), as well as different approaches to combine distribution with multithreading.
-                        </p>
-                        <a href="https://www.coursera.org/learn/distributed-programming-in-java?specialization=pcdp">Coursera</a>
-                        <p class= "cost">Cost: $40</p>
-                    </div>
-                    <div class="course-right">
-                        <img src="img/banner-kafka.png" alt="distributed programming in java banner">
+                    <div class="course-middle">
+                        <div class="course-left">
+                            
+                            <p>
+                                This course teaches learners (industry professionals and students) the fundamental concepts of 
+                                Distributed Programming in the context of Java 8. Distributed programming enables developers to 
+                                use multiple nodes in a data center to increase throughput and/or reduce latency of selected applications. 
+                                By the end of this course, you will learn how to use popular distributed programming frameworks for Java programs, 
+                                including Hadoop, Spark, Sockets, Remote Method Invocation (RMI), Multicast Sockets, Kafka, 
+                                Message Passing Interface (MPI), as well as different approaches to combine distribution with multithreading.
+                            </p>
+                            <a href="https://www.coursera.org/learn/distributed-programming-in-java?specialization=pcdp">Coursera</a>
+                            <p class= "cost">Cost: $40</p>
+                        </div>
+                        <div class="course-right">
+                            <img src="img/banner-kafka.png" alt="distributed programming in java banner">
+                        </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -169,17 +181,20 @@
                     <div class="course-top">
                         <h2>Cloud Computing Concepts, Part 1</h2>
                     </div>
-                    <div class="course-left">
-                        <p>
-                            Cloud computing systems today, whether open-source or used inside companies, are built using a 
-                            common set of core techniques, algorithms, and design philosophies – all centered around distributed systems. 
-                            Learn about such fundamental distributed computing "concepts" for cloud computing.
-                        </p>
-                        <a href="https://www.coursera.org/learn/cloud-computing?specialization=cloud-computing">Coursera</a>
-                        <p class= "cost">Cost: $40</p>
-                    </div>
-                    <div class="course-right">
-                        <img src="img/banner-cloud-1.jpg" alt="cloud computing concepts banner">
+                    <div class="course-middle">
+                        <div class="course-left">
+                            
+                            <p>
+                                Cloud computing systems today, whether open-source or used inside companies, are built using a 
+                                common set of core techniques, algorithms, and design philosophies – all centered around distributed systems. 
+                                Learn about such fundamental distributed computing "concepts" for cloud computing.
+                            </p>
+                            <a href="https://www.coursera.org/learn/cloud-computing?specialization=cloud-computing">Coursera</a>
+                            <p class= "cost">Cost: $40</p>
+                        </div>
+                        <div class="course-right">
+                            <img src="img/banner-cloud-1.jpg" alt="cloud computing concepts banner">
+                        </div>
                     </div>
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
@@ -194,22 +209,24 @@
                 </section>
 
                  <!-- Course -- Cloud Computing Concepts: Part 2 -->
-                 <section class="course" id="ds-course-5">
-                    <div class="course-top">
-                        <h2>Cloud Computing Concepts: Part 2</h2>
-                    </div>
-                    <div class="course-left">
-                        <p>
-                            Know how these systems work from the inside out. Get your hands dirty using these concepts with 
-                            provided homework exercises. In the programming assignments, implement some of these concepts in 
-                            template code (programs) provided in the C++ programming language.
-                        </p>
-                        <a href="https://www.coursera.org/projects/android-app-kotlin">Coursera</a>
-                        <p class= "cost">Cost: $40</p>
-                    </div>
-                    <div class="course-right">
-                        <img src="img/banner-cloud-2.jpg" alt="cloud computing concepts banner">
-                    </div>
+                 <section class="course" id="ds-course-5">  
+                     <div class="course-top">
+                         <h2>Cloud Computing Concepts: Part 2</h2>
+                     </div>
+                     <div class="course-middle">
+                          <div class="course-left">
+                                <p>
+                                    Know how these systems work from the inside out. Get your hands dirty using these concepts with 
+                                    provided homework exercises. In the programming assignments, implement some of these concepts in 
+                                    template code (programs) provided in the C++ programming language.
+                                </p>
+                                <a href="https://www.coursera.org/projects/android-app-kotlin">Coursera</a>
+                                <p class= "cost">Cost: $40</p>
+                            </div>
+                            <div class="course-right">
+                                <img src="img/banner-cloud-2.jpg" alt="cloud computing concepts banner">
+                            </div>
+                        </div>    
                     <div class="course-bottom">
                         <h3>Syllabus - What you will learn from this course</h3>
                         <ol>
@@ -221,8 +238,8 @@
                         </ol>
                     </div>
                 </section>
-            </section>
-        </div>
+            </article>
+            
     </main>
 
     <!-- Footer bar -->
@@ -236,5 +253,6 @@
             </ul>
         </div>
     </footer>
+    </div>
 </body>
 </html>  
