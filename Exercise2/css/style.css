@@ -53,13 +53,14 @@ a:active { /* current link*/
     width: 100%;
     height: fit-content;
 }
-.page-icon{
-    width: 40%;
-    
-}
-.page-icon img{
+
+.page-icon {
     width: 20%;
-    height: auto;
+    margin: 1% 0;
+}
+
+.page-icon img{
+    width: 40%;
 }
 
 .page-menu {
@@ -290,12 +291,17 @@ button:hover{
     text-align: center;
 }
 
-.about .section-title h2 {
+.about .section-title h2, .about .section-info p {
     margin-bottom: 2%;
 }
 
 .about-topics {
     background: url(../img/topics-banner.jpg) no-repeat center center/cover;
+    color: var(--white);
+}
+
+.about-bio {
+    background: url(../img/bio-banner.jpg) no-repeat center center/cover;
     color: var(--white);
 }
 
@@ -316,5 +322,46 @@ button:hover{
 }
 
 .banner-topic .banner-left li {
+    list-style: none;
+}
+
+/* Biography */
+.bio {
+    width: 60%;
+    border-radius: 2%;
+    background: var(--white);
+    margin: 2% 0;
+    padding: 5%;
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.bio:hover{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+.bio-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+
+.bio-header div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-header img {
+    border-radius: 2%;
+}
+
+.bio-info div {
+    margin-bottom: 1%;
+}
+
+.bio-comp ul, .bio-comp ol {
     list-style: none;
 }
