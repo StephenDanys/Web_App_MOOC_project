@@ -2,3 +2,121 @@
 .wrapper{  
     display: grid;
 }
+/*.wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height 
+  }  
+.main-container{
+    display: grid;
+    padding-bottom: 2.5rem; 
+}*/
+#form-about{
+    background: url(../img/banner-contact.jpg) no-repeat center center/cover;;
+    height: 40vh;
+    font-weight: 900;
+    grid-column-start:1;
+    grid-column-end: 3;
+    
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+
+}
+
+.contact-form{
+    margin:2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    
+}
+
+.contact-form input[type=text] , .contact-form input[type=email] {
+    width: 100%;
+    border: 2px solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1em 1em;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+}
+.contact-form input[type=tel]{
+    border: 2px solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1em 1em;   
+}
+
+#sel-country-phone-code{
+    border: 2px solid;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 1em 1em;
+
+}
+.help-bar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 5%
+}
+.user-info, .user-feedback, .user-rating{
+    padding :5%;
+    margin-bottom: 1%;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #5499C7;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+input[type=radio]{
+    padding: 1em 1em;
+    margin-left: 5%;
+}
+.help-bar {
+    background-color: blue;
+}
+.help-bar h2{
+    font-size: 2em;
+    text-align: center;
+}
+.help-bar dt{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 1%;
+    font-style: italic;
+}
+
+
+.help-bar dd{
+    padding-bottom: 3%;
+}
