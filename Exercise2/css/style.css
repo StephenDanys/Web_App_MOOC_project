@@ -452,13 +452,11 @@ button:hover{
 .course-bottom ol {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: left;
     margin: 0 2%;
 }
 
-.course-bottom li {
-    padding-bottom: 1%;
-}
 
 .sidebar-box {
     grid-column-start: 2;
@@ -476,4 +474,8 @@ button:hover{
 
 .sidebar li {
     margin-bottom: 5%;
+}
+
+.course-bottom li{
+    padding:2%;
 }
