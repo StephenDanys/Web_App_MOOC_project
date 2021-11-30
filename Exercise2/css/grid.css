@@ -3,22 +3,16 @@
 .wrapper{ /* creates full grid*/
     display: grid;
 }
-
-
 /*COURSE RULES*/
 .course-right img {
     width:100%;
 }
-
 .course-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-auto-rows: minmax(200px, auto);
     column-gap: 1%;
 }
-
-
-
 .course-list {
     grid-row-start: 1;
     display: grid;
