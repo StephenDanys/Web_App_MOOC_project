@@ -66,7 +66,7 @@ a:active { /* current link*/
 }
 
 .page-menu {
-    width: 20%;
+    width: 30%;
 }
 
 .page-menu ul {
@@ -495,12 +495,133 @@ button:hover{
 
 /* Large devices */
 @media screen and (max-width: 992px) {
+    .page-icon {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .page-menu {
+        width: 35%;
+    }
+
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-banner .banner-left h2 {
+        margin: 2%;
+        font-size: 1rem;
+    }
+
+    .promo-banner .banner-left p {
+        margin: 2% 2% 8% 2%;
+        font-size: 0.7rem;
+    }
+
+    .info-banner .banner-left h2 {
+        font-size: 1.5rem;
+    }   
+
+    .info-banner .banner-left dt {
+        font-size: 1.2rem;
+    }
+
+    .info-banner .banner-left p {
+        font-size: .9rem;
+    }
+
+    .bio-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bio-header img {
+        width: 100%;
+        border-radius: 2%;
+    } 
 }
 
 /* Medium devices */
 @media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .page-icon {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-menu {
+        width: 80%;
+    }
+
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-banner .banner-left h2 {
+        margin: 2%;
+        font-size: 1rem;
+    }
+
+    .promo-banner .banner-left p {
+        margin: 2% 2% 8% 2%;
+        font-size: 0.7rem;
+    }
+
+   .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .search form {
+        width: 60%;
+    }
+
+    .info-banner .banner-left h2 {
+        font-size: 1.5rem;
+    }   
+
+    .info-banner .banner-left dt {
+        font-size: 1.2rem;
+    }
+
+    .info-banner .banner-left p {
+        font-size: .9rem;
+    }
+
+    .bio-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bio-header img {
+        width: 100%;
+        border-radius: 2%;
+    } 
 }
 
 /* Extra small devices */
