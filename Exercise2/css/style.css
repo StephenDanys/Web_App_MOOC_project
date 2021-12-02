@@ -549,6 +549,10 @@ button:hover{
         width: 100%;
         border-radius: 2%;
     } 
+
+    .sidebar-box {
+        display: none;
+    }
 }
 
 /* Medium devices */
@@ -622,6 +626,10 @@ button:hover{
         width: 100%;
         border-radius: 2%;
     } 
+
+    .sidebar-box {
+        display: none;
+    }
 }
 
 /* Extra small devices */
@@ -694,5 +702,9 @@ button:hover{
     .bio-header img {
         width: 100%;
         border-radius: 2%;
+    }
+
+    .sidebar-box {
+        display: none;
     }
 }
