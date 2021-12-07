@@ -710,4 +710,24 @@ button:hover{
     .sidebar-box {
         display: none;
     }
+
+    #form-wrapper{
+        display: grid;
+
+    }
+    .main-container{
+        display: grid;
+        grid-auto-rows: minmax(200px, auto);
+    }
+
+    .contact-form{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .help-bar{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 5%
+    }
 }
