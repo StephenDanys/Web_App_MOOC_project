@@ -7,6 +7,7 @@
     --golden:#f49f1c;
     --white-lie: #dededc;
     --white-smoke: #f4f4f4;
+    --white-tint-yell:#fff7ec;
 }
 
 /* General */
@@ -41,6 +42,10 @@ a:visited { /* visited link*/
 
 a:active { /* current link*/
     color: purple;
+}
+
+a:hover{
+    background: var(--blue-birds);
 }
 
 /* Navigation Bar */
@@ -127,7 +132,7 @@ footer {
     align-items: center;
     width: 90%;
     /* background: var(--white); */
-    background: #fff7ec;
+    background: var(--white-tint-yell);
     box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
@@ -394,7 +399,6 @@ button:hover{
 .course {
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin: 2%;
     padding: 2%;
     /* background: var(--white); */
@@ -457,7 +461,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;
     margin: 0 2%;
 }
 
