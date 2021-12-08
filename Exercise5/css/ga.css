@@ -60,7 +60,15 @@ input[type=radio]{
     margin-left: 5%;
 }
 
+#coll-label{
+    margin-right: 5%;
+}
 
 #country{
     width:30%;
+}
+
+#sub-button{
+    width: 20%;
+    
 }

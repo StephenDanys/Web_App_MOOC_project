@@ -9,6 +9,7 @@
     <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/ga.css" rel="stylesheet">
+    <script>src="script/validation.js"</script>
     <title>Subscribe | SkillDev</title>
 </head>
 
@@ -130,10 +131,16 @@
                     <label for="uni">University Degree</label>
 
                     <input type="radio" id="college" name="college" value= "college">
-                    <label for="high">Coledge Degree</label>
+                    <label id="coll-label" for="high">Coledge Degree</label>
 
-                    <input type="number" min="1900" max="2099" step="1" value="2021" />
+                    <label for="grand-year">Graduation Year</label>
+                    <input id="grand-year" type="number" min="1900" max="2099" step="1" value="2021" >
+                    
                 </fieldset>
+
+                <div class="user-submit">
+                    <input id="sub-button" type="submit" value="Subscribe">
+                </div>
             </form>
 
             <!-- Footer bar -->
