@@ -228,7 +228,7 @@ footer { /* the footer should be horizontal in big sceens */
 
 .info-banner .banner-right img {
     margin: 10% 0;
-    width: 60%;
+    /* width: 60%; */
 }
 
 /* Search */
