@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online classes for numerus Computer Science fields.">
+    <meta name="author" content="Georgios-Stefanos Meidanis (3170107), Lampros Lountzis (3170095)">
+    <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ga.css" rel="stylesheet">
+    <title>Subscribe | SkillDev</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">  
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Webpage icon -->
+                <div class="page-icon">
+                    <img src="img/logo-sm.png" alt="webpage icon">  
+                </div>
+                <!-- Webpage name -->
+                <div class="page-name">
+                    <h1>SkillDev</h1>
+                </div>
+                <!-- Webpage menu -->
+                <div class="page-menu">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="topics.html">Topics</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main container">
+            
+            <section id="subscribe-about" class="about">
+                <div class="section-title">
+                    <h1> Subscribe</h1>
+                </div>
+                <div class="section-info">
+                    <p>
+                        Subscribe in order to take our courses: 
+                    </p>
+                </div>
+            </section>
+            
+            <!--subscribe form-->
+            <form class="sub-form" action="/process_form" method="post">
+                <fieldset id="user-info" class="field">
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first-name-form" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last-name-form" required >
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email-form" required >
+
+                    <label for="address">Address></label>
+                    <input type="text" id="address" name="address-form" required >
+
+                    <label for="birthday">Date of Birth:</label>
+                    <input type="date" id="birthday" name="birthday-form" required min="1950-01-01" max="2021-12-9">
+                    <label for="contry">Country </label>
+                    <input type="text" id="country" name="country-form" required placeholder="Greece" >
+
+
+                    <label for="sel-country-phone-code">County phone code</label>
+                    <select class ="select" id="sel-country-phone-code" name="phone-code" required>
+                        <option value="" selected>--Please choose an option--</option>
+                        <option value="+30">+30 Greece</option>
+                        <option value="+1">+1 USA</option>
+                        <option value="+92">+92 Pakistan</option>
+                    </select>
+                    
+                    
+
+                    <label for="tel"> Phone : </label>
+                    <input type="tel" id="tel" name="telephone-form" placeholder="123-456-7890" size="12">
+                </fieldset>
+               
+
+                <fieldset class="field" id="payment">
+                    <legend>Payment Method</legend>
+                    
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+            
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                </fieldset>
+
+                <fieldset class= "field" id="credentials">
+                    <legend>User credentials</legend>
+                    
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" >
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                </fieldset>
+
+                <fieldset class="field" id="bio">
+                    <legend>Bio/ Interests</legend>
+                    <h3>Education</h3>
+
+                    <input type="radio" id="high" name="high school" value= "high school">
+                    <label for="high">High School</label>
+
+                    <input type="radio" id="uni" name="university" value= "university">
+                    <label for="uni">University Degree</label>
+
+                    <input type="radio" id="college" name="college" value= "college">
+                    <label for="high">Coledge Degree</label>
+
+                    <input type="number" min="1900" max="2099" step="1" value="2021" />
+                </fieldset>
+            </form>
+
+            <!-- Footer bar -->
+    <footer id="footer" class="container"> 
+        <div class="social">
+            <ul>
+                <li><b>Mobile:</b> <a href="tel:123-456-7890">123-456-7890</a>, <a href="tel:123-456-7890">123-456-7890</a></li>
+                <li><b>Email:</b> <a href="mailto:p3170095@aueb.gr">p3170095@aueb.gr</a>, <a href="mailto:p31701017@aueb.gr">p31701017@aueb.gr</a></li>
+                <li><b>Github:</b> <a href="https://github.com/StephenDanys">lamproslntz</a>, <a href="https://github.com/lamproslntz">StephenDanys</a></li>
+                <li><b>Instagram:</b> <a href="https://www.instagram.com/lampros_lntz/">lampros_lntz</a>, <a href="https://www.instagram.com/stephendanys/">stephendanys</a></li>
+            </ul>
+        </div>
+    </footer>
+    </main>
+    </div>
+</body>
+</html>
