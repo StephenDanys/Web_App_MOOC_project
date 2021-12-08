@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online classes for numerus Computer Science fields.">
+    <meta name="author" content="Georgios-Stefanos Meidanis (3170107), Lampros Lountzis (3170095)">
+    <meta name="keywords" content="MOOC, Free, Online, Classes, CS, Informatics, SkillDev">
+    <link href="css/generally_appliable.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Contact | SkillDev</title>
+</head>
+<body>  
+   <!-- Header bar -->
+   <div class="wrapper" id="form-wrapper">
+   <header class="container">  
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <!-- Webpage icon -->
+            <div class="page-icon">
+                <img src="img/logo-sm.png" alt="webpage icon">
+            </div>
+            <!-- Webpage name -->
+            <div class="page-name">
+                <h1>SkillDev</h1>
+            </div>
+            <!-- Webpage menu -->
+            <div class="page-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+
+    <main class="main-container" id="main_form">
+        <!-- Page banner -->
+        <section id="form-about" class="about">
+            <div class="section-title">
+                <h1> Contact us</h1>
+            </div>
+            <div class="section-info">
+                <p>
+                    Do you have a question? The quickest way to get in touch with us is using the contact information below.
+                </p>
+            </div>
+        </section>
+
+            <!-- Contact form -->
+            <form class="contact-form" action="/process_form" method="post">
+                <!-- User information -->
+                <fieldset class="user-info">
+                    <legend>Contact Information</legend>
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first-name-form" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last-name-form" required >
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email-form" required >
+                    
+                    <!-- selector for country phone code -->
+                    <label for="sel-country-phone-code">County phone code</label>
+                    <select id="sel-country-phone-code" name="phone-code" required>
+                        <option value="" selected>--Please choose an option--</option>
+                        <option value="+30">+30 Greece</option>
+                        <option value="+1">+1 USA</option>
+                        <option value="+92">+92 Pakistan</option>
+                    </select>
+
+                    <label for="tel"> Phone : </label>
+                    <input type="tel" id="tel" name="telephone-form" placeholder="123-456-7890" size="12">
+                </fieldset>
+
+                <fieldset class="user-feedback">
+                    <legend>Feedback</legend>
+
+                    <!-- User rating -->
+                        <fieldset class="rate">
+                        <legend>Rate Us</legend>
+                        <input type="radio" id="onestar" name="rating" value="1">
+                        <label for="onestar">&#9733;</label>
+
+                        <input type="radio" id="twostars" name="rating" value="2">
+                        <label for="twostars">&#9733;&#9733;</label>
+
+                        <input type="radio" id="threestars" name="rating" value="3">
+                        <label for="threestars">&#9733;&#9733;&#9733;</label>
+
+                        <input type="radio" id="fourstars" name="rating" value="4">
+                        <label for="fourstars">&#9733;&#9733;&#9733;&#9733;</label>
+
+                        <input type="radio" id="fivestars" name="rating" value="5">
+                        <label for="onestar">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                        </fieldset>
+                        <label for="review">Review Us/  Ask Us Anything</legend>
+                        <textarea id="review" name="review" placeholder="Write something..." ></textarea>
+                    
+                </fieldset>
+                
+                <div class="user-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            
+            <div class="help-bar">
+                <aside class="sidebar">
+                    <nav>
+                        <h2>Frequently Asked Questions</h2>
+                        <dl>
+                            <dt>What are your Billing Oprtions</dt>
+                        <dd>
+                            We accept credit, debit and prepaid cards.
+                        </dd>
+                        <dt>I need more information about a provided course</dt>
+                        <dd>
+                            Try contanting us using the form on this page!
+                        <dt>Which Organisation supporst this page?</dt>
+                        <dd>
+                            Athens Uneversity of Economics and Buisness
+                        </dd>
+                    </nav>
+                </aside>
+            </div>
+    </main>
+
+    <!-- Footer bar -->
+    <footer id="footer" class="container"> 
+        <div class="social">
+            <ul>
+                <li><b>Mobile:</b> <a href="tel:123-456-7890">123-456-7890</a>, <a href="tel:123-456-7890">123-456-7890</a></li>
+                <li><b>Email:</b> <a href="mailto:p3170095@aueb.gr">p3170095@aueb.gr</a>, <a href="mailto:p31701017@aueb.gr">p31701017@aueb.gr</a></li>
+                <li><b>Github:</b> <a href="https://github.com/StephenDanys">lamproslntz</a>, <a href="https://github.com/lamproslntz">StephenDanys</a></li>
+                <li><b>Instagram:</b> <a href="https://www.instagram.com/lampros_lntz/">lampros_lntz</a>, <a href="https://www.instagram.com/stephendanys/">stephendanys</a></li>
+            </ul>
+        </div>
+    </footer>
+   </div>
+</body>
+</html>
