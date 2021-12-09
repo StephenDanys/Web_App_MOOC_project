@@ -628,6 +628,130 @@ input[type=radio]{
     padding-bottom: 3%;
 }
 
+.field{
+    padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 5px groove;
+  border-collapse: collapse;
+}
+
+.title{
+   text-align: center;
+   
+}
+
+.sub-form{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#user-info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#bio{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input{
+    border-radius: 1em;
+}
+input:invalid{
+    box-shadow: 0 0 5px 1px red;
+
+}
+input:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.sub-form input[type=text] , .sub-form input[type=email], input[type=password] {
+    width: 100%;
+    border: 2px solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1em 1em;
+    box-sizing: border-box;
+}
+input[type=tel], input[type=date], input[type=number]{
+    border: 2px solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1em 1em;   
+}
+
+.select{
+    border: 2px solid;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 1em 1em;
+    border-radius: 1em;
+
+}
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #5499C7;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label{
+    font-weight: bold;
+}
+
+.norm-font{
+    font-weight: normal;
+}
+input[type=radio], input[type=checkbox]{
+    padding: 1em 1em;
+    margin: 2%;
+}
+
+#coll-label{
+    margin-right: 5%;
+}
+
+#country{
+    width:50%;
+}
+#sub-button{
+    font-size: larger;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #5499C7;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+    width: 200%;
+}
+#expyear, #cvv{
+    width: 20%;
+    margin-left: 2%;
+}
 /* Large devices */
 @media screen and (max-width: 992px) {
     .page-icon {
