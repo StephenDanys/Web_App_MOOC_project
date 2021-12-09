@@ -590,12 +590,15 @@ textarea {
 }
 
 input[type=submit]{
+    font-size: larger;
     background-color: #5499C7;
     border: none;
     color: white;
     padding: 1em 1em;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 1em;
+    width: 20%;
 }
 
 input[type=radio]{

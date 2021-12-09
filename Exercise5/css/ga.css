@@ -3,6 +3,43 @@
     display: grid;
 }
 
+.field{
+    padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 5px groove;
+  border-collapse: collapse;
+}
+
+.title{
+   text-align: center;
+   color:blue;
+}
+
+.sub-form{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#user-info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#bio{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input{
+    border-radius: 1em;
+}
+input:invalid{
+    box-shadow: 0 0 5px 1px red;
+
+}
 input:focus{
     background-color: #ddd;
     outline: none;
@@ -29,6 +66,7 @@ input[type=tel], input[type=date], input[type=number]{
     margin-bottom: 1%;
     margin-top: 1%;
     padding: 1em 1em;
+    border-radius: 1em;
 
 }
 
@@ -53,11 +91,16 @@ input[type=submit]{
     cursor: pointer;
 }
 
+label{
+    font-weight: bold;
+}
 
-
-input[type=radio]{
+.norm-font{
+    font-weight: normal;
+}
+input[type=radio], input[type=checkbox]{
     padding: 1em 1em;
-    margin-left: 5%;
+    margin: 2%;
 }
 
 #coll-label{
@@ -65,10 +108,22 @@ input[type=radio]{
 }
 
 #country{
-    width:30%;
+    width:50%;
 }
-
 #sub-button{
+    font-size: larger;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #5499C7;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+    width: 200%;
+}
+#expyear, #cvv{
     width: 20%;
-    
+    margin-left: 2%;
 }

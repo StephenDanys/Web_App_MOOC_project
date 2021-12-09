@@ -38,9 +38,9 @@
             </nav>
         </header>
 
-        <main class="main container">
+        <main class="sub-container">
             
-            <section id="subscribe-about" class="about">
+            <section id="subscribe-about" class="title">
                 <div class="section-title">
                     <h1> Subscribe</h1>
                 </div>
@@ -52,11 +52,12 @@
             </section>
             
             <!--subscribe form-->
-            <form class="sub-form" action="/process_form" method="post">
+            <form class="sub-form">
                 <fieldset id="user-info" class="field">
                     <legend>Personal Information</legend>
                     <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="first-name-form" required>
+                    <input type="text" id="fname" name="first-name-form" required
+                    pattern="[A-Za-z]+">
 
                     <label for="lname">Last Name:</label>
                     <input type="text" id="lname" name="last-name-form" required >
@@ -64,7 +65,7 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email-form" required >
 
-                    <label for="address">Address></label>
+                    <label for="address">Address</label>
                     <input type="text" id="address" name="address-form" required >
 
                     <label for="birthday">Date of Birth:</label>
@@ -84,7 +85,7 @@
                     
 
                     <label for="tel"> Phone : </label>
-                    <input type="tel" id="tel" name="telephone-form" placeholder="123-456-7890" size="12">
+                    <input type="tel" id="tel" name="telephone-form" required placeholder="123-456-7890" size="12">
                 </fieldset>
                
 
@@ -92,57 +93,236 @@
                     <legend>Payment Method</legend>
                     
                     <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
                     
                     <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]{13,16}
+                    " required>
                     
                     <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
 
                     <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    <input type="number" id="expyear" name="expyear" placeholder="2018" required>
             
                     <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                    <input type="number" id="cvv" name="cvv" placeholder="352" required>
                 </fieldset>
 
                 <fieldset class= "field" id="credentials">
                     <legend>User credentials</legend>
                     
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" >
+                    <label for="username">Enter username (upper and lowercase letters/ numbers): </label>
+                    <input type="text" name="username" id="username" required pattern="/^[a-z\d]+$/i">
                     
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                    
+                    <label for="password1"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password1" id="password1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        
+        
+                    <label for="password2"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="password2" id="password2" required>
                 </fieldset>
 
                 <fieldset class="field" id="bio">
                     <legend>Bio/ Interests</legend>
                     <h3>Education</h3>
-
-                    <input type="radio" id="high" name="high school" value= "high school">
-                    <label for="high">High School</label>
-
-                    <input type="radio" id="uni" name="university" value= "university">
-                    <label for="uni">University Degree</label>
-
-                    <input type="radio" id="college" name="college" value= "college">
-                    <label id="coll-label" for="high">Coledge Degree</label>
-
-                    <label for="grand-year">Graduation Year</label>
-                    <input id="grand-year" type="number" min="1900" max="2099" step="1" value="2021" >
+                    <div>
+                        <h3>What is the highest degree you've completed?</h3>
                     
+                        <label class="norm-font" for="edu-1">
+                            <input type="radio" name="edu-1">Less than high school diploma (or equivalent)</input>
+                        </label>
+                        <label class="norm-font" for="edu-2">
+                            <input type="radio" name="edu-2">High school diploma (or equivalent)</input>
+                        </label>
+                        <label class="norm-font" for="edu-3">
+                            <input type="radio" name="edu-3">Some college but no degree</input>
+                        </label>
+                        <label class="norm-font" for="edu-4"> 
+                            <input type="radio" name="edu-4">Associate Degree (e.g., AA, AS)</input>
+                        </label>
+                        <label class="norm-font"  for="edu-5">
+                            <input type="radio" name="edu-5">Bachelor's degree (e.g., BA, AB, BS)</input>
+                        </label>
+                        <label  class="norm-font"  for="edu-6">
+                            <input type="radio" name="edu-6">Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA)</input>
+                        </label>
+                        <label class="norm-font"  for="edu-7">
+                            <input type="radio" name="edu-7">Professional school degree (e.g., MD, DDS, DVM, LLB, JD)</input>
+                        </label>
+                        <label class="norm-font"  for="edu-8">
+                            <input type="radio" name="edu-8">Doctorate degree (e.g., PhD, EdD)</input>
+                        </label>
+                        
+                        <label class="norm-font"  for="grand-year">Graduation Year</label>
+                        <input id="grand-year" type="number" min="1900" max="2099" step="1" value="2021" >
+                    </div>
+                    
+                    <div>
+                        <h3>What was your field or major?</h3>
+                        
+                        <label  class="norm-font" for="major">Major:</label>
+                        <input type="text" id="major" name="major">
+                    </div>
+                    
+                    <div>
+                        <h3>What is your goal?</h3>
+                    
+                        <label  class="norm-font" for="goal-1">
+                            <input type="radio" name="goal-1">Level up my skills</input>
+                        </label>
+                        <label class="norm-font"  for="goal-2">
+                            <input type="radio" name="goal-2">Change my career path</input>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <h3>What is your experience level?</h3>
+                    
+                        <label class="norm-font"  for="exp-1">
+                            <input type="radio" name="exp-1">Junior/Entry level</input>
+                        </label>
+                        <label class="norm-font"  for="exp-2">
+                            <input type="radio" name="exp-2">Mid-level</input>
+                        </label>
+                        <label class="norm-font"  for="exp-3">
+                            <input type="radio" name="exp-3">Lead/Manager</input>
+                        </label>
+                        <label class="norm-font"  for="exp-4">
+                            <input type="radio" name="exp-4">Senior/Manager Director</input>
+                        </label>
+                        <label class="norm-font"  for="exp-5">
+                            <input type="radio" name="exp-5">Executive</input>
+                        </label> 
+                    </div>
+                    
+                    <div>
+                        <h3>What is your employment status?</h3>
+                    
+                        <label class="norm-font" for="emp-1">
+                            <input type="radio" name="emp-1">Employed full time (35 or more hours per week)</input>
+                        </label>
+                        <label class="norm-font"  for="emp-2">
+                            <input type="radio" name="emp-2">Employed part time (less than 35 hours per week)</input>
+                        </label>
+                        <label class="norm-font"  for="emp-3">
+                            <input type="radio" name="emp-3">Self-employed full time (35 or more hours per week)</input>
+                        </label>
+                        <label  class="norm-font" for="emp-4"> 
+                            <input type="radio" name="emp-4">Self-employed part time (less than 35 hours per week)</input>
+                        </label>
+                        <label  class="norm-font" for="emp-5">
+                            <input type="radio" name="emp-5">Homemaker, taking care of a family member, or on maternity/paternity leave</input>
+                        </label>
+                        <label  class="norm-font" for="emp-6">
+                            <input type="radio" name="emp-6">Unemployed and looking for work</input>
+                        </label>
+                        <label class="norm-font"  for="emp-7">
+                            <input type="radio" name="emp-7">Unemployed and not looking for work</input>
+                        </label>
+                        <label  class="norm-font" for="emp-8">
+                            <input type="radio" name="emp-8">Retired</input>
+                        </label>
+                        <label  class="norm-font" for="emp-9">
+                            <input type="radio" name="emp-9">Unable to work</input>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <h3>Have you ever taken an online course?</h3>
+                    
+                        <label class="norm-font"  for="choose-1">
+                            <input type="radio" name="choose-1">Yes</input>
+                        </label>
+                        <label  class="norm-font" for="choose-2">
+                            <input type="radio" name="choose-2">No</input>
+                        </label>
+                    </div>
+                    
+                    
+                    <div>
+                        <h3>Which learning programs are you interested in?</h3>
+                    
+                        <label class="norm-font"  for="prog-1">
+                            <input type="checkbox" name="prog-1">Guided Projects</input>
+                        </label>
+                        <label  class="norm-font" for="prog-2">
+                            <input type="checkbox" name="prog-2">Courses</input>
+                        </label>
+                        <label  class="norm-font" for="prog-3">
+                            <input type="checkbox" name="prog-3">Specializations</input>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <h3>Which of the following fields are you interested in?</h3>
+                    
+                        <label class="norm-font"  for="field-1">
+                            <input type="checkbox" name="field-1">Data Science</input>
+                        </label>
+                        <label class="norm-font"  for="field-2">
+                            <input type="checkbox" name="field-2">Application Development</input>
+                        </label>
+                        <label  class="norm-font" for="field-3">
+                            <input type="checkbox" name="field-3">Health Science</input>
+                        </label>
+                        <label  class="norm-font" for="field-4"> 
+                            <input type="checkbox" name="field-4">Business Science</input>
+                        </label>
+                        <label class="norm-font"  for="field-5">
+                            <input type="checkbox" name="field-5">Arts and Humanities</input>
+                        </label>
+                    </div>
+                    
+                    
+                    <div>
+                        <h3>How much time per week do you have to study?</h3>
+                    
+                        <label  class="norm-font" for="tine-1">
+                            <input type="radio" name="tine-1">1-2 hours</input>
+                        </label>
+                        <label class="norm-font"  for="tine-2">
+                            <input type="radio" name="tine-2">4-6 hours</input>
+                        </label>
+                        <label  class="norm-font" for="tine-3">
+                            <input type="radio" name="tine-3">1-2 days</input>
+                        </label>
+                        <label  class="norm-font" for="tine-4"> 
+                            <input type="radio" name="tine-4">4-5 days</input>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <h3>Which of these languages do you known?</h3>
+                    
+                        <label class="norm-font"  for="tool-1">
+                            <input type="checkbox" name="tool-1">C</input>
+                        </label>
+                        <label class="norm-font"  for="tool-2">
+                            <input type="checkbox" name="tool-2">C++</input>
+                        </label>
+                        <label class="norm-font"  for="tool-3">
+                            <input type="checkbox" name="tool-3">C#</input>
+                        </label>
+                        <label class="norm-font"  for="tool-4">
+                            <input type="checkbox" name="tool-4">Java</input>
+                        </label>
+                        <label class="norm-font"  for="tool-5">
+                            <input type="checkbox" name="tool-5">Python</input>
+                        </label>
+                        <label class="norm-font"  for="tool-6">
+                            <input type="checkbox" name="tool-6">JavaScript</input>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <div class="user-submit">
-                    <input id="sub-button" type="submit" value="Subscribe">
+                    <button id="sub-button">Submit</button>
                 </div>
             </form>
-
+            </main>
             <!-- Footer bar -->
     <footer id="footer" class="container"> 
         <div class="social">
@@ -154,7 +334,7 @@
             </ul>
         </div>
     </footer>
-    </main>
     </div>
+    <script src="script/validation.js"></script>    
 </body>
 </html>
